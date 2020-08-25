@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="todoApp">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta name="test" content="aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J5TjlTWlp3QXVKUGZ6S3ZQQjdLZ1pKRDZGeEtlN2E5UUNhcFBrNVI2dW9TTEpSb1pvL2V4ZWM/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./accets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./accets/css/style.css">
+
+  <script src="./accets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="./accets/js/angular.min.js"></script>
+  <script src="./accets/js/popper.min.js"></script>
+  <script src="./accets/js/bootstrap.min.js"></script>
+  <script src="./accets/js/fingerprint2.min.js"></script>
+  <script src="./accets/js/index.js"></script>
+</head>
+
+<body ng-controller="TodoListController">
+  <div id="loader"></div>
+  <div class="container-fluid">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Date</label>
+        <input type="date" ng-model="data.Date" class="form-control" id="exampleFormControlInput2"
+          placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Note</label>
+        <input type="text" ng-model="data.Note" class="form-control" id="exampleFormControlInput3"
+          placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Rs</label>
+        <input type="number" ng-model="data.Amount" class="form-control" id="exampleFormControlInput4"
+          placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlSelect5"> Type </label>
+        <select class="form-control" id="exampleFormControlSelect1" ng-model="data.Type">
+          <option value="IN">IN</option>
+          <option value="Out">Out </option>
+          <option value="Info">Info</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="col-12 text-right">
+        <button type="button" name="" id="" class="btn btn-primary" ng-click="save()">
+          Save
+        </button>
+      </div>
+
+
+    </form>
+  </div>
+</body>
+
+</html>
