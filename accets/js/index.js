@@ -24,6 +24,7 @@ angular.module('todoApp', [])
       $("#loader").hide();
       init();
       $scope.$apply();
+      location.reload();
      })
     })  
   }
